@@ -14,6 +14,6 @@ const { data: cachedData } = useNuxtData('test-key');
 
 const { data, pending } = await useFetch('https://jsonplaceholder.typicode.com/todos/1', {
   key: 'test-key',
-  server: false,
+  server: false, // try to comment and data will be fetched
 });
 </script>
